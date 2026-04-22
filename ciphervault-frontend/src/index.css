@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-cv-bg: #0f1115;
+  --color-cv-surface: #171a21;
+  --color-cv-border: #2a2f3a;
+  --color-cv-accent: #7c6cf0;
+  --color-cv-accent-hover: #948cf5;
+}
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-slate-50 text-slate-900 dark:bg-[var(--color-cv-bg)] dark:text-slate-100 min-h-screen;
+  }
+}
